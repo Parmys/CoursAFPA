@@ -1,0 +1,10 @@
+package fr.afpa.util;
+
+public class Convertisseur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

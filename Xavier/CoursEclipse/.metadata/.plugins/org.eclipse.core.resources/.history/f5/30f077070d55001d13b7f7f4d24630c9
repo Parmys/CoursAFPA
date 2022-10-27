@@ -1,0 +1,33 @@
+package fr.afpa.math;
+
+public class CalculFactor {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+						///////////////////////////////////////
+						//////////// import static ////////////
+						///////////////////////////////////////
+		System.out.println("import static : "+ Math.facto(5));
+		
+		
+
+	}
+
+}

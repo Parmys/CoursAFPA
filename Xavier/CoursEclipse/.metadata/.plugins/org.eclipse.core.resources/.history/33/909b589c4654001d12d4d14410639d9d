@@ -1,0 +1,89 @@
+package fr.afpa.math;
+
+import java.util.Scanner;
+
+public class Math {
+
+	static long n, l, f;
+	static int cmp;
+	static long fact;
+	static Scanner clavier;
+
+	////////////////////////////////////////////
+	////////////// factorielle For////////////
+	//////////////////////////////////////////
+
+//	public static long factorielleFor() {
+//
+//		fact = 1;
+//		for (int i = 1; i <= n; i++) {
+//
+//			fact = fact * i;
+//		}
+//		return fact;
+//	}
+
+	////////////////////////////////////////////
+	////////////// factorielle While////////////
+	//////////////////////////////////////////
+
+	// public static long factorielleWhile() {
+
+//	 do {
+//	 System.out.println(" ------- ");
+//	 if (n < 0) {
+//	 System.out.println(" tappez un chiffre positif : ");
+//	 n = clavier.nextInt();
+//	 }
+//	
+//	 } while (n < 0);
+//	 
+//	
+//		if (n == 0) {
+//			System.out.println("factoriel est : " + 1);
+//
+//		} else if (n == 1) {
+//			System.out.println("factoriel est : " + 1);
+//		}
+//		fact = 1;
+//		while (n >= 1) {
+//
+//			fact = fact * n;
+//
+//			// System.out.println("fact "+ fact);
+//			n = n - 1;
+//		}
+//		return fact;
+//
+//	}
+
+	////////////////////////////////////////////
+	////////////// factorielle recursive////////
+	//////////////////////////////////////////
+	public static long facto(long l) {
+
+		if (l >= 1) {
+			return l * facto(l - 1);
+		} else {
+			return 1;
+		}
+
+	}
+
+//////////////////////////////////////////////////////////////////////////////
+	public static void main(String[] args) {
+		clavier = new Scanner(System.in);
+		System.out.println(" tappez un chiffre positif : ");
+		n = clavier.nextInt();
+
+//		f = factorielleFor();
+//		System.out.println("factotiel de n " + "est " + f + "!");
+		//////////////////////////////
+		// System.out.println(factorielleWhile());
+		///////////////////////////////////////
+		f = facto(n);
+		System.out.println("recursive  " + f);
+		clavier.close();
+	}
+
+}

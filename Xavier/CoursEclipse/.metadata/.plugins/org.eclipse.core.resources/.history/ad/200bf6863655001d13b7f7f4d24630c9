@@ -1,0 +1,19 @@
+package fr.afpa.math;
+import java.math.BigDecimal;
+public class euroToDollar {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

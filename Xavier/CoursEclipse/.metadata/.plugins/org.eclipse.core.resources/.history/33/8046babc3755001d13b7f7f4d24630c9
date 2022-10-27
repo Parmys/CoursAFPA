@@ -1,0 +1,27 @@
+package fr.afpa.util;
+
+import java.math.BigDecimal;
+import static fr.afpa.util.euroToDollar.eurosToDollars;
+
+
+import javax.swing.JOptionPane;
+
+public class Convertisseur {
+
+	public static void main(String[] args) {
+		
+		
+		String saisie = JOptionPane.showInputDialog("Entrez un nombre : ");
+	    
+		
+		long	n = Long.parseLong(saisie);
+		
+		  euroToDollar(n);
+		
+		
+		
+		
+
+	}
+
+}

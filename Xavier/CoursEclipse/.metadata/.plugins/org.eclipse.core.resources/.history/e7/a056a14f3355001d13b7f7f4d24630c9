@@ -1,0 +1,10 @@
+package fr.afpa.math;
+
+public class euroToDollar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
