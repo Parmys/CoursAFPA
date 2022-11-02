@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"equestre.libconsole","l":"CentreEquestre_V1"}];updateSearchResults();
