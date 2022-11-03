@@ -1,0 +1,68 @@
+package eval.question;
+
+import java.util.Scanner;
+
+public class Quest1_age {
+
+	public static void main(String[] args) {
+		System.out.println(
+"*******************************************************************\n" +
+"Question 1\n" +
+"On veut savoir quand une mère aura le double de l'âge de son fils.\n"+
+"Lecture au clavier des 2 âges et présentation du résultat.\n"+
+"*******************************************************************\n\n\n"
+		);
+		
+		// C'est un programe qui calcule le double de l'age d'une mere par rapport à son fils
+		
+		
+		int ageMere;
+		
+		int ageFils;
+		int cmp=0;
+		
+		boolean flag=true;
+		Scanner clavier= new Scanner(System.in);
+		
+		 	System.out.println("Entrez l'age de la mere : ");
+			ageMere=clavier.nextInt();
+			System.out.println("Entrez l'age du fils : ");
+			ageFils=clavier.nextInt();
+		           
+		      
+		       while(ageMere > (ageFils*2) && flag ==true ) {
+		    	   
+		    	  flag=true;
+		    	   
+		    	  // System.out.println("|||| "+ageMere);
+		    	  	    	 	 	
+		    		cmp=cmp+1;
+		    		
+		    		//System.out.println("|||| "+ageMere);
+			        ageMere=ageMere+cmp;  
+				    ageFils=ageFils+cmp; 
+  				  
+				    
+				   if(ageMere<=ageFils*2) {
+				    
+				    ageMere=ageMere+cmp;  
+				    ageFils=ageFils+cmp;
+				    
+				   }else if  (ageMere==(ageFils*2)) {
+					   
+				   		    	 
+			    	   System.out.println("l'age double de la mere est  : " + ageMere + " et de l enfant est : " + ageFils); 
+			    	   flag=false;
+			       }
+			       
+
+
+				    
+				   
+
+		       	}
+		       
+
+}
+
+}

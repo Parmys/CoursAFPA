@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;20221106_9_ECF_JAVA/474_wEVALUATION_ALGO_AFOURNIR&apos; to &apos;KHOBZI_EVALUATION_ALGO_AFOURNIR&apos;" description="Rename resource &apos;474_wEVALUATION_ALGO_AFOURNIR&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="474_wEVALUATION_ALGO_AFOURNIR" name="KHOBZI_EVALUATION_ALGO_AFOURNIR" stamp="1667481425268" updateReferences="true"/>
+</session>

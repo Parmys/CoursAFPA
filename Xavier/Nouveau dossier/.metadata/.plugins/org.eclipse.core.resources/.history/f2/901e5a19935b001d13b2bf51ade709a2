@@ -1,0 +1,68 @@
+package eval.question;
+
+import java.util.Scanner;
+
+public class Quest5_Intervalle {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(
+"*******************************************************************\n" +
+"Question 5\n" +
+"Demander les deux intervalles [a ; b] et [c ; d]\n"+
+"Si b < c ou bien a > d, l'intersection est vide\n"+
+"Sinon, calculer deux variables : m (maximum de a et de c) et M (minimum de b et de d)\n"+
+" et afficher l'intervalle [m; M]\n"+
+"*******************************************************************\n\n\n"
+		);
+		
+		
+		int [] tab = new int [4];
+		int max, min;
+		int  a, b, c,d;
+		Scanner clavier= new Scanner(System.in);
+		
+		for(int i=0; i<=tab.length-1;i++) {
+		System.out.println("demander l'intervalle [a,b], entrer a : ");
+		a =clavier.nextInt();
+		
+		System.out.println("demander l'intervalle [a,b], entrer b : ");
+		b =clavier.nextInt();
+		
+		System.out.println("demander l'intervalle [a,b], entrer c : ");
+		c =clavier.nextInt();
+		
+		System.out.println("demander l'intervalle [a,b], entrer d : ");
+		d =clavier.nextInt();
+		
+		tab[0]=a;
+		tab[1]=b;
+		tab[2]=c;
+		tab[3]=d;
+		
+		
+		}
+		
+		
+		
+//		if (b<c || d<a) {
+//			System.out.println(" ensemble vide");
+//			
+//		}else {
+//			
+//			
+//		}
+//		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

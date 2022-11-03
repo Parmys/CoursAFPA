@@ -1,0 +1,59 @@
+package eval.question;
+
+import java.util.Scanner;
+
+public class Quest3_Addition {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(
+"*******************************************************************\n" +
+"Question 3\n" +
+"L'utilisateur saisit 5 nombres maximum.\n"+
+"Chaque nombre saisi est suivi de la touche [Entrée].\n"+
+"La saisie est terminée quand les 5 nombres sont saisis ou si on entre le nombre zéro.\n"+
+"Réafficher la liste des nombres saisis sous la forme d'une addition avec la somme de ses nombres.\n"+ 
+"( exemple: 8 + 9 + 2 + 1  = 20 )\n"+
+"*******************************************************************\n\n\n"
+		);
+		// programme qui affiche 5 nombres saisis
+		
+			Scanner clavier= new Scanner(System.in);
+		
+			int a=0,b=0,c=0,d=0,e=0;
+		
+	       int  somme =0; 
+	    
+	    
+		System.out.println("Entrez 5 nombres  ");
+		
+		for(int i=0; i<=5; i++) { 
+			
+			System.out.println("Entrez 1 nombre  ");
+		   
+			
+				
+		       a=clavier.nextInt();
+		       
+		   	System.out.println("Entrez 2 nombre  ");
+		    b=clavier.nextInt();
+			System.out.println("Entrez 3  nombre  ");
+			 c=clavier.nextInt();
+			System.out.println("Entrez 4  nombre  ");
+			 d=clavier.nextInt();
+			System.out.println("Entrez 4  nombre  ");
+			 e=clavier.nextInt();
+			 	somme=a+b+c+d+e;
+			 	
+		    }
+			 	
+	
+		
+		System.out.println(a  + "+" + b+ "+"+ c+ "+"+ d + "+ " +e +" = " + somme   );
+				
+}
+	
+	
+}

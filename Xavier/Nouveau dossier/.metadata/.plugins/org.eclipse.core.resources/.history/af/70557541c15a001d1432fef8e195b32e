@@ -1,0 +1,76 @@
+package fr.afpa.util.tool;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
+import java.time.Period;
+import java.time.temporal.ChronoUnit;
+
+public class UtilitaireBookstore {
+	
+	static int getAge(  LocalDate dateNaiss,LocalDateTime now ) {
+		
+		LocalDateTime  today=LocalDateTime.now();  // source PC pour la date.
+    	//LocalDateTime  dateNaiss=LocalDateTime.of(1969, Month.APRIL, 29, 14, 00, 00);
+		
+	    dateNaiss=LocalDate.of(0, 0, 0);
+    	long day=(ChronoUnit.DAYS.between( dateNaiss,today));
+    	long month=(ChronoUnit.MONTHS.between(dateNaiss,today));
+    	long year=(ChronoUnit.YEARS.between(dateNaiss,today));
+    	
+    	System.out.println("Votre age en jours : " + day);
+    	System.out.println("Votre age en mois : "+ month);
+    	System.out.println("Votre age en annee : "+ year);
+    	
+		return (int)year;
+		
+		
+	}
+	
+	
+	
+static int getAge1(LocalDate dateNaiss,LocalDate now ) {
+		
+		//LocalDateTime  today=LocalDateTime.now();  // source PC pour la date.
+    	//LocalDateTime  dateNaiss=LocalDateTime.of(1969, Month.APRIL, 29, 14, 00, 00);
+		///////////////////////////////////////////////
+	    LocalDate  today1=LocalDate.now();
+		dateNaiss=LocalDate.of(1969,04,29);
+	    int age =Period.between(dateNaiss,today1).getYears();
+	    System.out.println(age);
+	    
+	    
+	    //////////////////////////////////
+//    	long  day=(ChronoUnit.DAYS.between( dateNaiss,today));
+//    	long month=(ChronoUnit.MONTHS.between(dateNaiss,today));
+//    	long year=(int)(ChronoUnit.YEARS.between(dateNaiss,today));
+//    	
+//    	System.out.println("Votre age en jours : " + day);
+//    	System.out.println("Votre age en mois : "+ month);
+//    	System.out.println("Votre age en annee : "+ year);
+//    	
+//		return year;
+		////////////////////////////////////
+		return age;
+	}
+		
+
+	public static void main(String[] args) {
+		
+		LocalDate  dateNaiss=LocalDate.parse("1969-10-11"); 
+		LocalDate   now=LocalDate.now();
+		
+	
+		System.out.println("Votre age en annee : " + getAge1(dateNaiss,now));
+		
+		//System.out.println("Votre age en annee : " + getAge1(dateNaiss, now));
+	}
+
+
+
+
+
+
+
+}
+	

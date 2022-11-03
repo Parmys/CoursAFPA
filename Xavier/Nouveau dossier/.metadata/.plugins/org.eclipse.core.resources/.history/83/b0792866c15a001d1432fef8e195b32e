@@ -1,0 +1,91 @@
+package fr.afpa.util;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class CalculFactorBig {
+
+	public static void main(String[] args) {
+						
+		
+		try
+		{
+			
+						long nbr;
+						String saisie = JOptionPane.showInputDialog("Entrez un nombre : ");
+						 
+						nbr=Long.parseLong(saisie);	
+		
+						BigInteger  factN= Factorielle(nbr);
+						JOptionPane.showMessageDialog(null, nbr + " ! vaut " + factN);	
+						//System.out.printf("%s",factN);
+		
+							do{
+							
+							if(nbr>9000) {
+								
+								saisie = JOptionPane.showInputDialog("Tappez un nombre plus petit 30000: ");
+								 
+								nbr=Long.parseLong(saisie);	
+								
+								 }else {
+									 
+									 JOptionPane.showMessageDialog(null, nbr + " ! vaut " + factN);
+								 }
+								 
+						}while(nbr >9000);	*/ 
+						
+						
+		}
+		catch(NumberFormatException e)
+		{
+			JOptionPane.showMessageDialog(null,e);
+			
+		}
+		catch(StackOverflowError   e){
+			
+			
+			JOptionPane.showMessageDialog(null,"capacité dépassée ");
+			
+		}
+		
+		
+		
+		
+	    
+	}
+		
+						public static BigInteger Factorielle(long nbr){			
+						BigInteger  fact=BigInteger.ONE;
+											
+						for(long i=nbr; i>=1; i--) {
+							
+									fact=fact.multiply(BigInteger.valueOf(i));
+							
+						
+							
+						}
+						
+						return fact;
+						}
+						
+						//System.out.println("BigInteger "+ fact);
+						
+							
+		
+					
+				
+				 
+				
+			
+		
+				
+	
+			
+		
+	
+
+}
