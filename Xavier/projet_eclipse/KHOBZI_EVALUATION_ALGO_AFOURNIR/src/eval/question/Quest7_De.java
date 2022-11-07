@@ -1,0 +1,43 @@
+package eval.question;
+
+import java.util.Random;
+
+public class Quest7_De {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(
+"*******************************************************************\n" +
+"Question 7\n" +
+"Lancer un dé ( valeur aléatoire de 1 à 6 ) 15 fois.\n" + 
+"Afficher les sorties et  afficher le nombre de sorties du\n" +
+"chiffre 1, de 2, de 3, de 4, de 5 et de 6\n" +
+"*******************************************************************\n\n\n"
+		);
+		
+		
+		int[] compteurs = {0,0,0,0,0,0};
+		
+		int tirage=0;
+		
+		for (int i = 1; i <= 15; i++) {
+			
+			tirage=(int)(((Math.random()*10) % 6)+1);
+			//Random  rand= new Random();
+			//tirage=rand.nextInt(6);
+			System.out.println("Tirage n° " + i + " : "  + tirage);
+			compteurs[tirage-1]++;
+		}
+
+		System.out.println("\nNombre de sorties : ");
+		
+		for (int i = 0; i <6 ; i++) {
+			System.out.println("Le chiffre " + (i+1)+ " a été tiré : " + compteurs[i]+ " fois");
+		}
+		
+		
+	}
+
+}
